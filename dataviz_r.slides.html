@@ -13914,7 +13914,7 @@ Traceback:
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13957,7 +13957,7 @@ Traceback:
 </div>
 </div>
 
-</div></div><div class="fragment">
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16606,7 +16606,7 @@ cols(
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./plots/plot1.png" width="600" align="left"/></p>
+<p><img src="https://raw.githubusercontent.com/stanmart/mnb_dataviz/master/plots//plot1.png" width="600" align="left"/></p>
 
 </div>
 </div>
@@ -16658,7 +16658,7 @@ cols(
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./plots/plot2.png" width="600" align="left"/></p>
+<p><img src="https://raw.githubusercontent.com/stanmart/mnb_dataviz/master/plots//plot2.png" width="600" align="left"/></p>
 
 </div>
 </div>
@@ -16710,7 +16710,7 @@ cols(
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./plots/plot3.png" width="600" align="left"/></p>
+<p><img src="https://raw.githubusercontent.com/stanmart/mnb_dataviz/master/plots//plot3.png" width="600" align="left"/></p>
 
 </div>
 </div>
@@ -16731,10 +16731,8 @@ cols(
 <div class=" highlight hl-r"><pre><span></span><span class="p">(</span>
 
 <span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Cylinders</span><span class="p">)),</span>
-               <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">stat_smooth</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">),</span>
-                <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;lm&quot;</span><span class="p">)</span>
+    <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Cylinders</span><span class="p">)),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
+    <span class="nf">stat_smooth</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">),</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;lm&quot;</span><span class="p">)</span>
 
 <span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">ggsave</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;./plots/plot4.png&quot;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">.,</span> <span class="n">width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 </pre></div>
@@ -16766,7 +16764,7 @@ cols(
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./plots/plot4.png" width="600" align="left"/></p>
+<p><img src="https://raw.githubusercontent.com/stanmart/mnb_dataviz/master/plots//plot4.png" width="600" align="left"/></p>
 
 </div>
 </div>
@@ -16787,10 +16785,8 @@ cols(
 <div class=" highlight hl-r"><pre><span></span><span class="p">(</span>
 
 <span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Cylinders</span><span class="p">)),</span>
-               <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
-    <span class="nf">stat_smooth</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">),</span>
-                <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;lm&quot;</span><span class="p">)</span> <span class="o">+</span>
+    <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Cylinders</span><span class="p">)),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
+    <span class="nf">stat_smooth</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">),</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;lm&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Year</span><span class="p">))</span>
 
 <span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">ggsave</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;./plots/plot5.png&quot;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">.,</span> <span class="n">width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
@@ -16820,15 +16816,15 @@ cols(
 </div>
 </div>
 
-</div><div class="fragment">
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./plots/plot5.png" width="600" align="left"/></p>
+<p><img src="https://raw.githubusercontent.com/stanmart/mnb_dataviz/master/plots//plot5.png" width="600" align="left"/></p>
 
 </div>
 </div>
-</div></div></section><section>
+</div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16886,7 +16882,7 @@ cols(
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><img src="./plots/plot6.png" width="600" align="left"/></p>
+<p><img src="https://raw.githubusercontent.com/stanmart/mnb_dataviz/master/plots//plot6.png" width="600" align="left"/></p>
 
 </div>
 </div>
