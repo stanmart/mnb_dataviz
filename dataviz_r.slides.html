@@ -16591,11 +16591,11 @@ cols(
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-r"><pre><span></span><span class="c1"># The data should be in long/tidy format!</span>
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span>                 <span class="o">%&gt;%</span> <span class="nf">ggsave</span><span class="p">(</span><span class="s">&quot;./plots/plot1.png&quot;</span><span class="p">,</span> <span class="n">.,</span> <span class="n">width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -16621,36 +16621,14 @@ cols(
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="p">(</span> <span class="c1"># Only the stuff between the outer parntheses is necessary!</span>
-    
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">))</span>
-
-<span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">ggsave</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;./plots/plot2.png&quot;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">.,</span> <span class="n">width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning message:
-&#34;Removed 14 rows containing missing values (geom_point).&#34;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -16673,36 +16651,14 @@ cols(
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="p">(</span>
-
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Cylinders</span><span class="p">)))</span>
-
-<span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">ggsave</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;./plots/plot3.png&quot;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">.,</span> <span class="n">width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning message:
-&#34;Removed 14 rows containing missing values (geom_point).&#34;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -16725,38 +16681,15 @@ cols(
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="p">(</span>
-
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Cylinders</span><span class="p">)),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">stat_smooth</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">),</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;lm&quot;</span><span class="p">)</span>
-
-<span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">ggsave</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;./plots/plot4.png&quot;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">.,</span> <span class="n">width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning message:
-&#34;Removed 14 rows containing non-finite values (stat_smooth).&#34;Warning message:
-&#34;Removed 14 rows containing missing values (geom_point).&#34;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -16779,44 +16712,20 @@ cols(
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="p">(</span>
-
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Cylinders</span><span class="p">)),</span> <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">stat_smooth</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">),</span> <span class="n">method</span> <span class="o">=</span> <span class="s">&quot;lm&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">facet_wrap</span><span class="p">(</span><span class="o">~</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Year</span><span class="p">))</span>
-
-<span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">ggsave</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;./plots/plot5.png&quot;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">.,</span> <span class="n">width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning message:
-&#34;Removed 14 rows containing non-finite values (stat_smooth).&#34;Warning message in qt((1 - level)/2, df):
-&#34;NaNs produced&#34;Warning message:
-&#34;Removed 14 rows containing missing values (geom_point).&#34;</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div></section><section>
+</div><div class="fragment">
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16824,7 +16733,7 @@ cols(
 
 </div>
 </div>
-</div></section><section>
+</div></div></section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -16835,12 +16744,10 @@ cols(
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-r"><pre><span></span><span class="p">(</span>
-
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
+<div class=" highlight hl-r"><pre><span></span><span class="nf">ggplot</span><span class="p">(</span><span class="n">cars_tbl</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">geom_point</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">,</span> <span class="n">shape</span> <span class="o">=</span> <span class="nf">factor</span><span class="p">(</span><span class="n">Cylinders</span><span class="p">)),</span>
                <span class="n">alpha</span> <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">stat_smooth</span><span class="p">(</span><span class="nf">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">Horsepower</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">l_per_100km</span><span class="p">,</span> <span class="n">color</span> <span class="o">=</span> <span class="n">Origin</span><span class="p">),</span>
@@ -16850,31 +16757,9 @@ cols(
     <span class="nf">xlab</span><span class="p">(</span><span class="s">&quot;Horsepower&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">ylab</span><span class="p">(</span><span class="s">&quot;Consumption (l / 100 km)&quot;</span><span class="p">)</span> <span class="o">+</span>
     <span class="nf">theme_bw</span><span class="p">()</span>
-
-<span class="p">)</span> <span class="o">%&gt;%</span> <span class="nf">ggsave</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s">&quot;./plots/plot6.png&quot;</span><span class="p">,</span> <span class="n">plot</span> <span class="o">=</span> <span class="n">.,</span> <span class="n">width</span> <span class="o">=</span> <span class="m">6</span><span class="p">,</span> <span class="n">height</span> <span class="o">=</span> <span class="m">4</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning message:
-&#34;Removed 14 rows containing non-finite values (stat_smooth).&#34;Warning message in qt((1 - level)/2, df):
-&#34;NaNs produced&#34;Warning message:
-&#34;Removed 14 rows containing missing values (geom_point).&#34;</pre>
-</div>
-</div>
-
 </div>
 </div>
 
